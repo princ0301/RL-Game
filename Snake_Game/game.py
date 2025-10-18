@@ -80,7 +80,7 @@ class SnakeGameAI:
             self.snake.pop()
 
         self._update_ui()
-        self.clock().tick(SPEED)
+        self.clock.tick(SPEED)
         return reward, game_over, self.score
     
     def is_collision(self, pt=None):
